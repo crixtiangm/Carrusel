@@ -7,7 +7,7 @@ import './Carrusel.css';
 const data = [
     {nombre: 'Cafetera',precio: 500, img:'cafetera.jpg'},
     {nombre: 'Control Xbox', precio: 1000, img:'control-videojuego.jpg'},
-    {nombre: 'Playera Sport', precio: 700, img:'playera-sport.jpg'},
+    {nombre: 'Coffe', precio: 700, img:'coffe.jpg'},
     {nombre: 'Reloj Dama', precio: 2500, img:'reloj-formal.jpg'},
     {nombre: 'Reloj Smart', precio: 5000, img:'reloj.jpg'},
     {nombre: 'Tenis Hummel', precio: 2000, img:'tenis-hummel.jpg'},
