@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from "react";
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+import ListGroup from 'react-bootstrap/ListGroup';
 import './Carrusel.css';
 
 const data = [
@@ -39,21 +42,19 @@ const Carrusel = () => {
         return setArrayProducto(data.slice(indexImagenInicial, final));
     }
 
-    console.log(indexImagenInicial, longitudArrayProductos)
-
     useEffect(() => {
         actual();
     },[])
 
+
     //Auto-Play
-    /* useEffect(() => {
+    useEffect(() => {
         const intervalo = setInterval(() => {
             siguiente();
         }, "3000");
 
         return () => clearInterval(intervalo);
-    }); */
-
+    });
     return(
         <div className="container">
             <button>
@@ -62,13 +63,18 @@ const Carrusel = () => {
                 </span>
             </button>
             {  arrayProducto.map((producto,idx) => {
-                    return  <div >
-                                <img
-                                    key={idx}
-                                    src={require(`../../assets/images/${producto.img}`)} 
-                                    alt={producto.nombre}
-                                />
-                            </div>
+                    return  <Card key={idx} className="text-center" style={{ width: '25rem' }}>
+                                <Card.Img variant="top" src={require(`../../assets/images/${producto.img}`)} />
+                                <Card.Body>
+                                    <Card.Title>{producto.nombre}</Card.Title>
+                                    <Card.Subtitle className="mb-2 mt-2">${producto.precio}</Card.Subtitle>
+                                </Card.Body>
+                                <ListGroup className="list-group-flush">
+                                    <ListGroup.Item>
+                                        <Button variant="primary">Comprar</Button>
+                                    </ListGroup.Item>
+                                </ListGroup>
+                            </Card>
                 })
             }
             <button>
