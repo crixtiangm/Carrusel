@@ -16,7 +16,7 @@ Lista de Tecnologias utilizadas en este proyecto:
 
 ## Instalación
 
-El codigo necesario para que funcione el programa se encuentra en el repositorio, a continuación los pasos necesarios para la descarga e instalacion de dependencias.
+El código necesario para que funcione el programa se encuentra en el repositorio, a continuación los pasos necesarios para la descarga e instalacion de dependencias.
 ```
 $ git clone https://github.com/crixtiangm/Carrusel.git
 $ cd ../path/Carrusel
