@@ -24,4 +24,4 @@ $ npm install
 $ npm run start
 ```
 
-
+![Carrusel](https://github.com/crixtiangm/Carrusel/blob/main/src/assets/Carrusel.png)
